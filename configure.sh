@@ -4,7 +4,7 @@ cp sources.list /etc/apt/sources.list
 echo"Updating sources..."
 apt-get update && apt-get upgrade -y
 echo"Installing dependencies..."
-apt-get install -y ufw fail2ban git lshw w3m network-manager firmware-iwlwifi chromium xserver-xorg-core xinit x11-xserver-utils xserver-xorg-video-all xserver-xorg-input-mouse xserver-xorg-input-kbd xserver-xorg-input-synaptics xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable libgl1-mesa-dri mesa-utils
+apt-get install -y ufw fail2ban git lshw w3m network-manager firmware-realtek firmware-iwlwifi chromium xserver-xorg-core xinit x11-xserver-utils xserver-xorg-video-all xserver-xorg-input-mouse xserver-xorg-input-kbd xserver-xorg-input-synaptics xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable libgl1-mesa-dri mesa-utils
 echo"Dependencies installed..."
 echo"Setting up firewall..."
 ufw allow OpenSSH
