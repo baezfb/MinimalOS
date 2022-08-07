@@ -84,7 +84,7 @@ Example:
 cat lshw.txt
 ```
 
-### Input packages
+### Input packages (optional)
 
 * for mouse and keyboard
 
@@ -128,7 +128,8 @@ apt-get install xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable libgl1-me
     ```bash
      touch .bash_profile
      ```
-    * Add following to .bash_profile ( This will initialize startx on user login on tty1 )
+    * Add following to .bash_profile, This will initialize startx on user login on tty1 w/o mouse cursor.
+    * remove -- -nocursor from startx command to enable mouse cursor.
       ```bash
        if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
          startx -- -nocursor
