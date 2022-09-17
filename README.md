@@ -145,7 +145,7 @@ apt-get install xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable libgl1-me
        xset -dpms
        xset s off
        xset s noblank
-       chromium localhost --window-size=1920,1080 --start-fullscreen --kiosk --incognito --noerrdialogs --disable-translate --no-first-run --fast --fast-start --disable-infobars --disable-features=TranslateUI --disk-cache-dir=/dev/null  --password-store=basic
+       chromium localhost --window-size=1920,1080 --start-fullscreen --kiosk --incognito --noerrdialogs --enable-features=OverlayScrollbar,OverlayScrollbarFlashAfterAnyScrollUpdate,OverlayScrollbarFlashWhenMouseEnter --disable-translate --no-first-run --fast --fast-start --disable-infobars --disable-features=TranslateUI --disk-cache-dir=/dev/null  --password-store=basic
        ```
 * Exit to default user account
     ```bash
